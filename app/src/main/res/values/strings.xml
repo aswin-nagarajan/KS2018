@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KurukSastra2k18</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
 </resources>
