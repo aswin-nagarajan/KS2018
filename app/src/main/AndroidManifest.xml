@@ -24,6 +24,10 @@
             android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProShowActivity"
+            android:label="@string/title_activity_pro_show"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

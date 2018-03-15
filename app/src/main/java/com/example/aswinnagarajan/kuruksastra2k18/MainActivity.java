@@ -1,5 +1,6 @@
 package com.example.aswinnagarajan.kuruksastra2k18;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         final ListView friends = (ListView) findViewById(R.id.friends);
 
         FlipSettings settings = new FlipSettings.Builder().defaultPage(1).build();
-
-        friends.setAdapter(new HomeEventAdapter(this, getHomeEvents(), settings));
+        final HomeEventAdapter adap = new HomeEventAdapter(this, getHomeEvents(), settings);
+        friends.setAdapter(adap);
 
         friends.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -37,11 +38,26 @@ public class MainActivity extends AppCompatActivity {
                 HomeEvent f = (HomeEvent) friends.getAdapter().getItem(position);
 
                 Toast.makeText(MainActivity.this, f.getNickname(), Toast.LENGTH_SHORT).show();
+
+                    if (adap.getItem(position).getNickname().equals("EVENTS")) {
+
+                        Intent intent = new Intent(getBaseContext(), EventsActivity.class);
+                        getBaseContext().startActivity(intent);
+                    } else if (adap.getItem(position).getNickname().equals("SCHEDULE")) {
+
+                        Intent intent = new Intent(getBaseContext(), ScheduleActivity.class);
+                        getBaseContext().startActivity(intent);
+                    } else if (adap.getItem(position).getNickname().equals("PRO SHOWS")) {
+
+                        Intent intent = new Intent(getBaseContext(), ProShowActivity.class);
+                        getBaseContext().startActivity(intent);
+                    }
+
             }
         });
 
         TapTargetView.showFor(this,                 // `this` is an Activity
-                TapTarget.forView(findViewById(R.id.title), "Welcome to KS 2018", "Swipe right on the images to show description")
+                TapTarget.forView(findViewById(R.id.title), "Welcome to KS 2018", "Swipe right on the images to show description \nClick to go to the category main screen")
                         // All options below are optional
                         .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
                         .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
