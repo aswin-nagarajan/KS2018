@@ -114,7 +114,7 @@ public class HomeEventAdapter extends BaseFlipAdapter<HomeEvent>  {
 
 
 
-    class FriendsHolder implements View.OnClickListener {
+    class FriendsHolder{
         ImageView leftAvatar;
         ImageView rightAvatar;
         View infoPage;
@@ -131,20 +131,6 @@ public class HomeEventAdapter extends BaseFlipAdapter<HomeEvent>  {
             this.a = a;
         }
 
-        @Override
-        public void onClick(View view) {
-            Log.d("h","In on Click");
-            if (view == details) {
-                if (a.getItem(pos).getNickname().equals("EVENTS")) {
 
-                    Intent intent = new Intent(ctx, EventsActivity.class);
-                    ctx.startActivity(intent);
-                } else if (a.getItem(pos).getNickname().equals("SCHEDULE")) {
-
-                    Intent intent = new Intent(ctx, ScheduleActivity.class);
-                    ctx.startActivity(intent);
-                }
-            }
-        }
     }
 
