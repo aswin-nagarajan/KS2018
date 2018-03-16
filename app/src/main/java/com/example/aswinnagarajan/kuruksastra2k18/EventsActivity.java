@@ -157,10 +157,10 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         eng.setResource(R.drawable.english);
 
         MenuObject tamil = new MenuObject("Tamizh Sangam");
-        tamil.setResource(R.drawable.english);
+        tamil.setResource(R.drawable.tamil);
 
         MenuObject tel = new MenuObject("Telugu Lits");
-        tel.setResource(R.drawable.english);
+        tel.setResource(R.drawable.telugu);
 
         MenuObject hind = new MenuObject("Hindi Lits");
         hind.setResource(R.drawable.english);

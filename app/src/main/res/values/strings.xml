@@ -11,4 +11,23 @@
     <string name="context_menu">Context menu</string>
     <string name="title_activity_participant_login">ParticipantLogin</string>
     <string name="title_activity_log_in">LogIn</string>
+    <string-array name="schedule_array">
+        <item>EXTEMPORE</item>
+        <item>WHATS THE GOOD WORD</item>
+        <item>THE LONE WOLF MONOACTING EVENT</item>
+        <item>TAMIL QUIZ</item>
+        <item>DUMB CHARADES(TAMIL)</item>
+        <item>DEBATE</item>
+        <item>MONOCHROMO</item>
+        <item>PATAKU PRANAM PALLAVI AITHE</item>
+        <item>GROUP DANCE(WESTERN)</item>
+        <item>DUMB CHARADES</item>
+        <item>THE GEN QUIZ</item>
+        <item>EXTEMPORE</item>
+        <item>HINDI SHORT FILM BOMBAY TALKIES</item>
+        <item>SCRABBLE</item>
+        <item>INTO THE JUNGLE IMPROV EVENT</item>
+        <item>SONGS QUIZ</item>
+        <item>WHATS THE GOOD WORD</item>
+    </string-array>
 </resources>
