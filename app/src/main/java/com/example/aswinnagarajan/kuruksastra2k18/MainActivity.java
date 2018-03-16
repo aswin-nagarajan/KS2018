@@ -45,15 +45,18 @@ public class MainActivity extends AppCompatActivity {
                     if (adap.getItem(position).getNickname().equals("EVENTS")) {
 
                         Intent intent = new Intent(getBaseContext(), EventsActivity.class);
-                        getBaseContext().startActivity(intent);
+                        startActivity(intent);
+                        //getBaseContext().startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("SCHEDULE")) {
 
-                        Intent intent = new Intent(getBaseContext(), ScheduleActivity.class);
-                        getBaseContext().startActivity(intent);
+                        Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
+                        //getBaseContext().startActivity(intent);
+                        startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("PRO SHOWS")) {
 
                         Intent intent = new Intent(getBaseContext(), ProShowActivity.class);
-                        getBaseContext().startActivity(intent);
+                        startActivity(intent);
+                        //getBaseContext().startActivity(intent);
                     }
 
             }
