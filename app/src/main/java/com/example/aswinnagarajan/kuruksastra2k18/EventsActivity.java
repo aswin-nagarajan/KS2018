@@ -64,11 +64,19 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
                 onBackPressed();
             }
         });
-        mToolBarTextView.setText("Samantha");
+        mToolBarTextView.setText("EVENTS");
         initMenuFragment();
         addFragment(new EventFragment(), true, R.id.container);
-        TapTargetView.showFor(this,                 // `this` is an Activity
-                TapTarget.forView(findViewById(R.id.toolbar), "Events and Clusters", "Tap on this button to look at the different clusters participating in KS 2k18\n Click on a specific clusters to look at the differents events conducted by that particular cluster ")
+
+        CharSequence title= "Events and Clusters";
+        CharSequence desc = "Tap on this button to look at the different clusters participating in KS 2k18 \n Click on a specific clusters to look at the differents events conducted by that particular cluster ";
+
+//        TapTargetView.showFor(this,
+//                TapTarget.forToolbarMenuItem(mToolbar,title,desc)
+
+                TapTargetView.showFor(this,
+                TapTarget.forToolbarNavigationIcon(mToolbar,title,desc)
+
                         // All options below are optional
                         .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
                         .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
@@ -92,6 +100,8 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
                         super.onTargetClick(view);
                     }
                 });
+
+
 
     }
 
@@ -128,30 +138,50 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         MenuObject close = new MenuObject();
         close.setResource(R.drawable.icn_close);
 
-        MenuObject send = new MenuObject("300dpi");
-        send.setResource(R.drawable.design_logo);
+        MenuObject dpi = new MenuObject("300dpi");
+        dpi.setResource(R.drawable.design_logo);
 
-        MenuObject like = new MenuObject("Like profile");
-        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.icn_2);
-        like.setBitmap(b);
+        MenuObject arts = new MenuObject("Arts");
+        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.arts);
+        arts.setBitmap(b);
 
-        MenuObject addFr = new MenuObject("Add to friends");
+        MenuObject east = new MenuObject("Eastern Dance Team");
         BitmapDrawable bd = new BitmapDrawable(getResources(),
-                BitmapFactory.decodeResource(getResources(), R.drawable.icn_3));
-        addFr.setDrawable(bd);
+                BitmapFactory.decodeResource(getResources(), R.drawable.eastern));
+        east.setDrawable(bd);
 
-        MenuObject addFav = new MenuObject("Add to favorites");
-        addFav.setResource(R.drawable.icn_4);
+        MenuObject west = new MenuObject("Western Dance Team");
+        west.setResource(R.drawable.dance);
 
-        MenuObject block = new MenuObject("Block user");
-        block.setResource(R.drawable.icn_5);
+        MenuObject eng = new MenuObject("English Literary Society");
+        eng.setResource(R.drawable.english);
+
+        MenuObject tamil = new MenuObject("Tamizh Sangam");
+        tamil.setResource(R.drawable.english);
+
+        MenuObject tel = new MenuObject("Telugu Lits");
+        tel.setResource(R.drawable.english);
+
+        MenuObject hind = new MenuObject("Hindi Lits");
+        hind.setResource(R.drawable.english);
+
+        MenuObject music = new MenuObject("SASTRA Music Team");
+        music.setResource(R.drawable.smt);
+
+        MenuObject stud = new MenuObject("The Studio");
+        stud.setResource(R.drawable.studio);
 
         menuObjects.add(close);
-        menuObjects.add(send);
-        menuObjects.add(like);
-        menuObjects.add(addFr);
-        menuObjects.add(addFav);
-        menuObjects.add(block);
+        menuObjects.add(dpi);
+        menuObjects.add(arts);
+        menuObjects.add(east);
+        menuObjects.add(west);
+        menuObjects.add(eng);
+        menuObjects.add(tamil);
+        menuObjects.add(tel);
+        menuObjects.add(hind);
+        menuObjects.add(music);
+        menuObjects.add(stud);
         return menuObjects;
     }
 
@@ -171,7 +201,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
                 onBackPressed();
             }
         });
-        mToolBarTextView.setText("Samantha");
+        mToolBarTextView.setText("EVENTS");
     }
 
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
