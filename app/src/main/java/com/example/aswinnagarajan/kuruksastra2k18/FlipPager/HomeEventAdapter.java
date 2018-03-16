@@ -51,19 +51,11 @@ public class HomeEventAdapter extends BaseFlipAdapter<HomeEvent>  {
             holder.rightAvatar = (ImageView) convertView.findViewById(R.id.second);
             holder.infoPage = li.inflate(R.layout.pager_item, parent, false);
             holder.nickName = (TextView) holder.infoPage.findViewById(R.id.nickname);
-            holder.details = (Button) holder.infoPage.findViewById(R.id.detailButton);
+//            holder.details = (Button) holder.infoPage.findViewById(R.id.detailButton);
 
             for (int id : IDS_INTEREST)
                 holder.interests.add((TextView) holder.infoPage.findViewById(id));
 
-            holder.details.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    // TODO Auto-generated method stub
-                    Toast.makeText(ctx, "Hurray! You clicked", Toast.LENGTH_LONG).show();
-                }
-            });
 
             convertView.setTag(holder);
         } else {
@@ -71,20 +63,21 @@ public class HomeEventAdapter extends BaseFlipAdapter<HomeEvent>  {
         }
 
 
-        switch (position) {
-            // Merged page with 2 friends
-            case 1:
-                holder.leftAvatar.setImageResource(friend1.getAvatar());
-                if (friend2 != null)
-                    holder.rightAvatar.setImageResource(friend2.getAvatar());
-                break;
-            default:
-                fillHolder(holder, position == 0 ? friend1 : friend2);
-                holder.infoPage.setTag(holder);
-                return holder.infoPage;
+            switch (position) {
+                // Merged page with 2 friends
+                case 1:
+                    holder.leftAvatar.setImageResource(friend1.getAvatar());
+                    if (friend2 != null)
+                        holder.rightAvatar.setImageResource(friend2.getAvatar());
+                    break;
+                default:
+                    fillHolder(holder, position == 0 ? friend1 : friend2);
+                    holder.infoPage.setTag(holder);
+                    return holder.infoPage;
+            }
+            return convertView;
         }
-        return convertView;
-    }
+
 
     @Override
     public int getPagesCount() {
@@ -102,7 +95,6 @@ public class HomeEventAdapter extends BaseFlipAdapter<HomeEvent>  {
 
         holder.infoPage.setBackgroundColor(ctx.getResources().getColor(friend.getBackground()));
         holder.nickName.setText(friend.getNickname());
-        holder.details.setText("Details");
 //        holder.details.setOnClickListener(this);
 
 

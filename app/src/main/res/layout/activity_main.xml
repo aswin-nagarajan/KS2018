@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:layout_width="wrap_content"
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="KURUKSASTRA 18 Logo"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"/>-->
+
+
+<LinearLayout android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_gravity="center_horizontal">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="KURUKSASTRA 18 Logo"
-        android:textSize="20dp"
-        android:layout_gravity="center_horizontal"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
-
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/friends"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:divider="#000000"
-android:dividerHeight="1dp"/>
-
-</LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/ks_logo"
+        android:id="@+id/title_logo"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#000000"
+        android:dividerHeight="1dp"/>
 
 </LinearLayout>
