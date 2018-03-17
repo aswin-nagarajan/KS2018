@@ -5,10 +5,12 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.aswinnagarajan.kuruksastra2k18.AboutKS.AboutKSActivity;
 import com.example.aswinnagarajan.kuruksastra2k18.FlipPager.HomeEvent;
 import com.example.aswinnagarajan.kuruksastra2k18.FlipPager.HomeEventAdapter;
 import com.getkeepsafe.taptargetview.TapTarget;
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         final ListView friends = (ListView) findViewById(R.id.friends);
 
@@ -42,22 +46,28 @@ public class MainActivity extends AppCompatActivity {
                     if (adap.getItem(position).getNickname().equals("EVENTS")) {
 
                         Intent intent = new Intent(getBaseContext(), EventsActivity.class);
-                        getBaseContext().startActivity(intent);
+                        startActivity(intent);
+                        //getBaseContext().startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("SCHEDULE")) {
 
-                        Intent intent = new Intent(getBaseContext(), ScheduleActivity.class);
-                        getBaseContext().startActivity(intent);
+                        Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
+                        //getBaseContext().startActivity(intent);
+                        startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("PRO SHOWS")) {
 
                         Intent intent = new Intent(getBaseContext(), ProShowActivity.class);
-                        getBaseContext().startActivity(intent);
+                        startActivity(intent);
+                        //getBaseContext().startActivity(intent);
+                    } else if(adap.getItem(position).getNickname().equals("ABOUT KURUKSASTRA")){
+                        Intent intent = new Intent(MainActivity.this, AboutKSActivity.class);
+                        startActivity(intent);
                     }
 
             }
         });
 
         TapTargetView.showFor(this,                 // `this` is an Activity
-                TapTarget.forView(findViewById(R.id.title), "Welcome to KS 2018", "Swipe right on the images to show description \nClick to go to the category main screen")
+                TapTarget.forView(findViewById(R.id.title_logo), "Welcome to KS 2018", "Swipe right on the images to show description \nClick to go to the category main screen")
                         // All options below are optional
                         .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
                         .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
@@ -86,14 +96,12 @@ public class MainActivity extends AppCompatActivity {
 
     public List<HomeEvent> getHomeEvents(){
         List<HomeEvent> friends = new ArrayList<HomeEvent>();
-        friends.add(new HomeEvent(R.drawable.anastasia, "EVENTS", R.color.sienna, "Sport", "Literature", "Music", "Art", "Technology"));
-        friends.add(new HomeEvent(R.drawable.anfer, "SCHEDULE", R.color.purple, "Android", "UI/Developer", "Soccer", "Profile", "Company"));
-        friends.add(new HomeEvent(R.drawable.irene, "PRO-SHOWS", R.color.saffron, "Travelling", "Flights", "Books", "Painting", "Design"));
-        friends.add(new HomeEvent(R.drawable.kate, "KATE", R.color.green, "Sales", "Pets", "Skiing", "Hairstyles", "Сoffee"));
-        friends.add(new HomeEvent(R.drawable.paul, "PAUL", R.color.pink, "Android", "Development", "Design", "Wearables", "Pets"));
-        friends.add(new HomeEvent(R.drawable.daria, "DARIA", R.color.orange, "Design", "Fitness", "Healthcare", "UI/UX", "Chatting"));
-        friends.add(new HomeEvent(R.drawable.kirill, "KIRILL", R.color.saffron, "Development", "Android", "Healthcare", "Sport", "Rock Music"));
-        friends.add(new HomeEvent(R.drawable.julia, "JULIA", R.color.green, "Cinema", "Music", "Tatoo", "Animals", "Management"));
+            friends.add(new HomeEvent(R.drawable.events, "EVENTS", R.color.sienna, "Dance", "Literature", "Music", "Arts", "Design"));
+        friends.add(new HomeEvent(R.drawable.schedule, "SCHEDULE", R.color.purple, "Day 0", "Day 1", "Day 2", "Day 3"));
+        friends.add(new HomeEvent(R.drawable.proshows, "PRO-SHOWS", R.color.saffron, "Sid Sriram", "Evam Tamasha", "SMT", "Crea Shakti"));
+        friends.add(new HomeEvent(R.drawable.aboutks, "ABOUT KURUKSASTRA", R.color.green, "History", "Showcases"));
+        friends.add(new HomeEvent(R.drawable.aboutus, "ABOUT US", R.color.pink, "Design", "Android App Development", "Graphic Design"));
+        friends.add(new HomeEvent(R.drawable.sponsors, "SPONSORS", R.color.orange, "Title Sponsor", "Associate Sponsor"));
         return friends;
     }
 }
