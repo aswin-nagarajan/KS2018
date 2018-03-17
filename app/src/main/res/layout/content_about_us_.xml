@@ -6,7 +6,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/scrim_gradient"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.example.aswinnagarajan.kuruksastra2k18.AboutUs_Activity"
+        tools:context="com.dpi300.aswinnagarajan.kuruksastra2k18.AboutUs_Activity"
         tools:showIn="@layout/activity_about_us_"/>
 
