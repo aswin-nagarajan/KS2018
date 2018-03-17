@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.aswinnagarajan.kuruksastra2k18.AboutKS.AboutKSActivity;
 import com.example.aswinnagarajan.kuruksastra2k18.FlipPager.HomeEvent;
 import com.example.aswinnagarajan.kuruksastra2k18.FlipPager.HomeEventAdapter;
 import com.getkeepsafe.taptargetview.TapTarget;
@@ -57,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(getBaseContext(), ProShowActivity.class);
                         startActivity(intent);
                         //getBaseContext().startActivity(intent);
+                    } else if(adap.getItem(position).getNickname().equals("ABOUT KURUKSASTRA")){
+                        Intent intent = new Intent(MainActivity.this, AboutKSActivity.class);
+                        startActivity(intent);
                     }
 
             }

@@ -15,7 +15,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,8 +29,8 @@
         <activity
             android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule"
-            android:theme="@style/Schedule_activity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Schedule_activity" />
         <activity
             android:name=".ProShowActivity"
             android:label="@string/title_activity_pro_show"
@@ -39,13 +38,19 @@
         <activity
             android:name=".ParticipantLogin"
             android:label="@string/title_activity_participant_login"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AboutKS.AboutKSActivity"
+            android:label="AboutKSActivity"
+            android:theme="@style/AboutActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".LogIn"
             android:label="@string/title_activity_log_in"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutKS.DetailActivity"
+            android:theme="@style/AboutActivity"
+            android:parentActivityName=".AboutKS.AboutKSActivity"/>
     </application>
 
 </manifest>
