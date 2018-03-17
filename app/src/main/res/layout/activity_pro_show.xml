@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aswinnagarajan.kuruksastra2k18.ProShowActivity">
+    tools:context="com.dpi300.aswinnagarajan.kuruksastra2k18.ProShowActivity">
 
 
     <include layout="@layout/content_pro_show" />

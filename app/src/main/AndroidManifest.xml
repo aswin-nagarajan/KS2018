@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aswinnagarajan.kuruksastra2k18">
+    package="com.dpi300.aswinnagarajan.kuruksastra2k18">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
+
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,47 +24,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EventsActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.EventsActivity"
             android:label="@string/title_activity_events"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ScheduleActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ScheduleActivity"
             android:label="@string/title_activity_schedule"
+            android:parentActivityName="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ProShowActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ProShowActivity"
             android:label="@string/title_activity_pro_show"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ParticipantLogin"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ParticipantLogin"
             android:label="@string/title_activity_participant_login"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.LogIn"
+            android:label="@string/title_activity_log_in"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".AboutKS.AboutKSActivity"
             android:label="AboutKSActivity"
             android:theme="@style/AboutActivity"
             android:parentActivityName=".MainActivity"/>
-        <activity
-            android:name=".LogIn"
-            android:label="@string/title_activity_log_in"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AboutKS.DetailActivity"
             android:theme="@style/AboutActivity"
             android:parentActivityName=".AboutKS.AboutKSActivity"/>
-
-        <activity
-            android:name=".SignInActivity"
-            android:label="@string/title_activity_sign_in"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutUs_Activity"
             android:label="@string/title_activity_about_us_"
             android:theme="@style/AppTheme.NoActionBar"/>
 
-
-
     </application>
-
-
 
 </manifest>
