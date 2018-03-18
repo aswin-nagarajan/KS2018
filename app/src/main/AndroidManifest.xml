@@ -14,8 +14,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
-
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/title_activity_events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProShowActivity"
+            android:label="@string/title_activity_pro_show"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParticipantLogin"
+            android:label="@string/title_activity_participant_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LogIn"
+            android:label="@string/title_activity_log_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutKS.AboutKSActivity"
+            android:label="AboutKSActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AboutActivity" />
+        <activity
+            android:name=".AboutKS.DetailActivity"
+            android:parentActivityName=".AboutKS.AboutKSActivity"
+            android:theme="@style/AboutActivity" />
+        <activity
+            android:name=".AboutUs_Activity"
+            android:label="@string/title_activity_about_us_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,42 +59,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.EventsActivity"
-            android:label="@string/title_activity_events"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ScheduleActivity"
-            android:label="@string/title_activity_schedule"
-            android:parentActivityName="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ProShowActivity"
-            android:label="@string/title_activity_pro_show"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ParticipantLogin"
-            android:label="@string/title_activity_participant_login"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.LogIn"
-            android:label="@string/title_activity_log_in"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".AboutKS.AboutKSActivity"
-            android:label="AboutKSActivity"
-            android:theme="@style/AboutActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".AboutKS.DetailActivity"
-            android:theme="@style/AboutActivity"
-            android:parentActivityName=".AboutKS.AboutKSActivity"/>
-        <activity
-            android:name=".AboutUs_Activity"
-            android:label="@string/title_activity_about_us_"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+        <activity android:name=".Sponsors" ></activity>
     </application>
 
 </manifest>

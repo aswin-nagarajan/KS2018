@@ -5,7 +5,7 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aswinnagarajan.kuruksastra2k18.AboutKS.DetailActivity"
+    tools:context="com.dpi300.aswinnagarajan.kuruksastra2k18.AboutKS.AboutKSActivity"
     android:background="@drawable/uphar_back"
     android:transitionName="robot">
 
@@ -20,10 +20,10 @@
          android:id="@+id/txt"
          android:textColor="@android:color/white"
          android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
+         android:layout_height="match_parent"
          android:textSize="25sp"
          android:text="@string/about_sastra"
-         android:maxLines = "20"
+         android:maxLines = "22"
          android:scrollbars = "vertical"
          android:padding="16dp"/>
 

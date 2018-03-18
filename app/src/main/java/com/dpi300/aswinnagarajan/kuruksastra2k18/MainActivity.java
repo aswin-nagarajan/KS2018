@@ -69,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, AboutUs_Activity.class);
                         startActivity(intent);
                     }
+                    else if(adap.getItem(position).getNickname().equals("SPONSORS")){
+                        Intent intent = new Intent(MainActivity.this, Sponsors.class);
+                        startActivity(intent);
+                    }
 
             }
         });
