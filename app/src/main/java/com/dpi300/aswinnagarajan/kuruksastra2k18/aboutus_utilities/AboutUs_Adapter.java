@@ -1,6 +1,8 @@
 package com.dpi300.aswinnagarajan.kuruksastra2k18.aboutus_utilities;
 
 import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +34,8 @@ public class AboutUs_Adapter extends RecyclerView.Adapter<AboutUs_Adapter.AboutU
     List<AboutUs> mAboutUsList = new ArrayList<>();
 
 
+
+
     public interface ListItemClickListener {
         void onListItemClick(int clickedItemIndex, int clickedCard);
     }
@@ -40,7 +44,10 @@ public class AboutUs_Adapter extends RecyclerView.Adapter<AboutUs_Adapter.AboutU
         mNumberItems = numberOfItems;
         mOnClickListener = listener;
         mAboutUsList = aboutUsList;
+
+
     }
+
 
 
     @Override
@@ -61,11 +68,12 @@ public class AboutUs_Adapter extends RecyclerView.Adapter<AboutUs_Adapter.AboutU
 
                 AboutUs aboutUs = mAboutUsList.get(position);
 
-                Picasso.with(holder.itemView.getContext()).load(aboutUs.getCover_url())
-                        .into( holder.imageView_cover);
+               /* Picasso.with(holder.itemView.getContext()).load(aboutUs.getCover_url())
+                        .into( holder.imageView_cover);*/
 
                 Picasso.with(holder.itemView.getContext()).load(aboutUs.getDp_url())
                         .into( holder.circleImageView_DP);
+
                 holder.textView_name.setText(aboutUs.getName());
                 holder.textView_desig.setText(aboutUs.getTitle());
 
@@ -86,10 +94,11 @@ public class AboutUs_Adapter extends RecyclerView.Adapter<AboutUs_Adapter.AboutU
         public AboutUs_ViewHolder(View itemView) {
             super(itemView);
 
-            imageView_cover = itemView.findViewById(R.id.imageView_cover);
+            //imageView_cover = itemView.findViewById(R.id.imageView_cover);
             circleImageView_DP = itemView.findViewById(R.id.imageView_profilePic_recyl);
             textView_name = itemView.findViewById(R.id.textView_name_recyl);
             textView_desig = itemView.findViewById(R.id.textView_posi_recyl);
+
 
             itemView.setOnClickListener(this);
 

@@ -14,8 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
-
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,41 +23,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.EventsActivity"
+            android:name=".EventsActivity"
             android:label="@string/title_activity_events"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ScheduleActivity"
+            android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule"
-            android:parentActivityName="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ProShowActivity"
+            android:name=".ProShowActivity"
             android:label="@string/title_activity_pro_show"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ParticipantLogin"
+            android:name=".ParticipantLogin"
             android:label="@string/title_activity_participant_login"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.LogIn"
+            android:name=".LogIn"
             android:label="@string/title_activity_log_in"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutKS.AboutKSActivity"
             android:label="AboutKSActivity"
-            android:theme="@style/AboutActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".AboutKS.DetailActivity"
-            android:theme="@style/AboutActivity"
-            android:parentActivityName=".AboutKS.AboutKSActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AboutActivity" />
+        <activity
+            android:name=".AboutKS.DetailActivity"
+            android:parentActivityName=".AboutKS.AboutKSActivity"
+            android:theme="@style/AboutActivity" />
         <activity
             android:name=".AboutUs_Activity"
             android:label="@string/title_activity_about_us_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUs_main_Activity"
+            android:label="@string/title_activity_about_us_main_"
             android:theme="@style/AppTheme.NoActionBar"/>
-
     </application>
 
 </manifest>

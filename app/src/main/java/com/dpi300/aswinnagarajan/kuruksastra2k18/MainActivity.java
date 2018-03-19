@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                     else if(adap.getItem(position).getNickname().equals("ABOUT US")){
-                        Intent intent = new Intent(MainActivity.this, AboutUs_Activity.class);
+                        Intent intent = new Intent(MainActivity.this, AboutUs_main_Activity.class);
                         startActivity(intent);
                     }
 

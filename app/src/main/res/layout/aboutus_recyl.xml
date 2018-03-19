@@ -5,71 +5,72 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="12dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="16dp">
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
 
     <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_marginBottom="16dp"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <View
-            android:id="@+id/View"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/black"
-            android:layout_width="match_parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_height="2dp"/>
-        <ImageView
-            android:id="@+id/imageView_cover"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            app:layout_constraintDimensionRatio="w,1:1"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/View" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
+         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_profilePic_recyl"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+          <!--  <ImageView
             android:id="@+id/imageView_profilePic_recyl"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            app:civ_border_color="#FF000000"
-            app:layout_constraintBottom_toBottomOf="@id/imageView_cover"
+            android:src="@drawable/scrim_gradient_1"
             app:layout_constraintDimensionRatio="w,1:1"
-            app:layout_constraintLeft_toLeftOf="@id/imageView_cover"
-            app:layout_constraintRight_toRightOf="@id/imageView_cover"
-            app:layout_constraintTop_toBottomOf="@id/imageView_cover"
-            app:layout_constraintVertical_bias="0.47" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_name" /> -->
+
+
         <TextView
             android:id="@+id/textView_name_recyl"
-            style="@style/Base.TextAppearance.AppCompat.Body2"
+            style="@style/Base.TextAppearance.AppCompat.Display2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/imageView_profilePic_recyl"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="8dp"
-            tools:text="Kavin Raju"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
             android:textColor="#000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_profilePic_recyl"
+            app:layout_constraintStart_toEndOf="@+id/imageView_profilePic_recyl"
+            app:layout_constraintTop_toTopOf="@+id/imageView_profilePic_recyl"
+            tools:text="Kavin Raju" />
+
         <TextView
             android:id="@+id/textView_posi_recyl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textColor="#000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_name_recyl"
             app:layout_constraintTop_toBottomOf="@id/textView_name_recyl"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="16sp"
-            tools:text="APP DEVELOPER"
-            android:textColor="#000"/>
+            tools:text="APP DEVELOPER" />
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>
