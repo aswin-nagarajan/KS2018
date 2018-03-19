@@ -78,7 +78,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 //                TapTarget.forToolbarMenuItem(mToolbar,title,desc)
 
                 TapTargetView.showFor(this,
-                TapTarget.forToolbarNavigationIcon(mToolbar,title,desc)
+                TapTarget.forView(mToolbar,title,desc)
 
                         // All options below are optional
                         .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
@@ -184,6 +184,10 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         listClusters.add(new String("The Studio"));
         stud.setResource(R.drawable.studio);
 
+        MenuObject sfh = new MenuObject("SASTRA Fotohub");
+        listClusters.add(new String("SASTRA Fotohub"));
+        stud.setResource(R.drawable.studio);
+
         menuObjects.add(close);
         menuObjects.add(dpi);
         menuObjects.add(arts);
@@ -195,6 +199,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         menuObjects.add(hind);
         menuObjects.add(music);
         menuObjects.add(stud);
+        menuObjects.add(sfh);
         return menuObjects;
     }
 
@@ -263,7 +268,9 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
     @Override
     public void onMenuItemClick(View clickedView, int position) {
 //        Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
-        EventFragment.change(listClusters.get(position-1));
+        if(position>=1) {
+            EventFragment.change(listClusters.get(position - 1));
+        }
 
 
     }
