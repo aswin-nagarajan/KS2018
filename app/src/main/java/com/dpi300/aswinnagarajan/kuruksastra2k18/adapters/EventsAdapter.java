@@ -16,13 +16,15 @@ import java.util.List;
  * Created by Aswin Nagarajan on 16-03-2018.
  */
 
-public class EventsAdapter extends RecyclerView.Adapter<EventHolder> {
+public class EventsAdapter extends RecyclerView.Adapter<EventHolder>{
     Context ctx;
     List<Event> list;
+    String cluster;
 
-    public EventsAdapter(Context ctx, List<Event> list){
+    public EventsAdapter(Context ctx, List<Event> list, String cluster){
         this.ctx = ctx;
         this.list = list;
+        this.cluster = cluster;
     }
     @Override
     public int getItemCount() {
@@ -41,5 +43,9 @@ public class EventsAdapter extends RecyclerView.Adapter<EventHolder> {
         Event as = list.get(position);
         holder.title.setText(as.getName());
         holder.participants.setText(as.getParticipants()+"");
+        holder.ctx = ctx;
+        holder.cluster = cluster;
     }
+
+
 }

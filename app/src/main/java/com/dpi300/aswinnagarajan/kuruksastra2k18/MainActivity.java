@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         TapTargetView.showFor(this,                 // `this` is an Activity
                 TapTarget.forView(findViewById(R.id.title_logo), "Welcome to KS 2018", "Swipe right on the images to show description \nClick to go to the category main screen")
                         // All options below are optional
-                        .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
+                        .outerCircleColor(R.color.white)      // Specify a color for the outer circle
                         .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
                         .targetCircleColor(R.color.colorPrimary)   // Specify a color for the target circle
                         .titleTextSize(30)                  // Specify the size (in sp) of the title text
