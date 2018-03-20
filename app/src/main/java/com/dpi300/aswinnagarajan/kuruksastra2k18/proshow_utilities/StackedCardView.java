@@ -172,23 +172,29 @@ public class StackedCardView {
 
     private void setmSwipeDirectionalViewBackground(){
         if(mShow.getTitle().equalsIgnoreCase("Shravan Sridhar")){
-            mSwipeDirectionalView.setBackgroundResource(R.drawable.shravan_sridhar);
+            //mSwipeDirectionalView.setBackgroundResource(R.drawable.shravan_sridhar);
+            imageView.setBackgroundResource(R.drawable.shravan_sridhar);
         }
         else if(mShow.getTitle().equalsIgnoreCase("Karthik")){
-            mSwipeDirectionalView.setBackgroundResource(R.drawable.karthik);
+//            mSwipeDirectionalView.setBackgroundResource(R.drawable.karthik);
+            imageView.setBackgroundResource(R.drawable.karthik);
         }
         else if(mShow.getTitle().equalsIgnoreCase("Aalap Raju")){
-            mSwipeDirectionalView.setBackgroundResource(R.drawable.aalap_raju);
+//            mSwipeDirectionalView.setBackgroundResource(R.drawable.aalap_raju);
+            imageView.setBackgroundResource(R.drawable.aalap_raju);
         } else if(mShow.getTitle().equalsIgnoreCase("Vijayagopal")){
 
-            mSwipeDirectionalView.setBackgroundResource(R.drawable.vijay);
+//            mSwipeDirectionalView.setBackgroundResource(R.drawable.vijay);
+            imageView.setBackgroundResource(R.drawable.vijay);
         } else if(mShow.getTitle().equalsIgnoreCase("Crea Shakthi")){
 
-            mSwipeDirectionalView.setBackgroundResource(R.drawable.crea_shakthi);
+            //mSwipeDirectionalView.setBackgroundResource(R.drawable.crea_shakthi);
+            imageView.setBackgroundResource(R.drawable.crea_shakthi);
         }
         else if(mShow.getTitle().equalsIgnoreCase("Sid Sriram")){
 
-            mSwipeDirectionalView.setBackgroundResource(R.drawable.sidsriram);
+            //mSwipeDirectionalView.setBackgroundResource(R.drawable.sidsriram);
+            imageView.setBackgroundResource(R.drawable.sidsriram);
         }
 
     }

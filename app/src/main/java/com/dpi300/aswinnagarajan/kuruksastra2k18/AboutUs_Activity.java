@@ -89,6 +89,7 @@ public class AboutUs_Activity extends AppCompatActivity implements AboutUs_Adapt
         onBackPressed();
 
         startActivity(new Intent(getApplicationContext() , AboutUs_main_Activity.class));
+        overridePendingTransition(R.anim.slide_from_left , R.anim.slide_to_right);
         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityCompat.finishAfterTransition(this);
         }

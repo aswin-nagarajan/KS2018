@@ -44,5 +44,6 @@ public class SplashScreen extends AwesomeSplash{
     @Override
     public void animationsFinished() {
         startActivity(new Intent(SplashScreen.this,MainActivity.class));
+        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
     }
 }

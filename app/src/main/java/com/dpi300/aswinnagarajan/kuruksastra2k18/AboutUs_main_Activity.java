@@ -60,6 +60,7 @@ public class AboutUs_main_Activity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext() , AboutUs_Activity.class);
                 i.putExtra("title" ,"GRAPHIC DESIGNER");
                 startActivity(i);
+                overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                 /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     String transitionName = getString(R.string.transition_sharedelement);
 
@@ -84,6 +85,7 @@ public class AboutUs_main_Activity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext() , AboutUs_Activity.class);
                 i.putExtra("title" ,"WEB DEVELOPER");
                 startActivity(i);
+                overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                 /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     String transitionName = getString(R.string.transition_sharedelement);
 
@@ -111,6 +113,7 @@ public class AboutUs_main_Activity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext() , AboutUs_Activity.class);
                 i.putExtra("title" ,"APP DEVELOPER");
                 startActivity(i);
+                overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                 /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     String transitionName = getString(R.string.transition_sharedelement);
 
@@ -137,6 +140,7 @@ public class AboutUs_main_Activity extends AppCompatActivity {
         onBackPressed();
 
         startActivity(new Intent(getApplicationContext() , MainActivity.class));
+        overridePendingTransition(R.anim.slide_from_left , R.anim.slide_to_right);
         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityCompat.finishAfterTransition(this);
         }

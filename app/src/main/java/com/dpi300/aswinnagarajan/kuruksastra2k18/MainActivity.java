@@ -51,28 +51,34 @@ public class MainActivity extends AppCompatActivity {
 
                         Intent intent = new Intent(MainActivity.this, EventsActivity.class);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                         //getBaseContext().startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("SCHEDULE")) {
 
                         Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
                         //getBaseContext().startActivity(intent);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                     } else if (adap.getItem(position).getNickname().equals("PRO SHOWS")) {
 
                         Intent intent = new Intent(MainActivity.this, ProShowActivity.class);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                         //getBaseContext().startActivity(intent);
                     } else if(adap.getItem(position).getNickname().equals("ABOUT KURUKSASTRA")){
                         Intent intent = new Intent(MainActivity.this, AboutKSActivity.class);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                     }
                     else if(adap.getItem(position).getNickname().equals("ABOUT US")){
                         Intent intent = new Intent(MainActivity.this, AboutUs_main_Activity.class);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                     }
                     else if(adap.getItem(position).getNickname().equals("SPONSORS")){
                         Intent intent = new Intent(MainActivity.this, Sponsors.class);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_right , R.anim.slide_to_left);
                     }
 
             }
