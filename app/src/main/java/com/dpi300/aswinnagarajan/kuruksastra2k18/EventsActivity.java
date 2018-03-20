@@ -143,7 +143,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
         MenuObject dpi = new MenuObject("300dpi");
         listClusters.add(new String("300dpi"));
-        dpi.setResource(R.drawable.design_new);
+        //dpi.setResource(R.drawable.design_new);
 
         MenuObject arts = new MenuObject("Arts");
         listClusters.add(new String("Arts"));
@@ -186,7 +186,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
         MenuObject sfh = new MenuObject("SASTRA Fotohub");
         listClusters.add(new String("SASTRA Fotohub"));
-        stud.setResource(R.drawable.sfh);
+        //stud.setResource(R.drawable.sfh);
 
         menuObjects.add(close);
         menuObjects.add(dpi);

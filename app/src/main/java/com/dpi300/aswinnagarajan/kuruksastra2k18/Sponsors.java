@@ -13,15 +13,15 @@ public class Sponsors extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_sponsors);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_sponsors);
+
 
         typeface = Typeface.createFromAsset(getAssets(),"font/PT_Sans-Narrow-Web-Regular.ttf");
-        /*txt1 = findViewById(R.id.prsnt);
+        txt1 = findViewById(R.id.prsnt);
         txt2 = findViewById(R.id.ast);
         txt3 = findViewById(R.id.ots);
         txt1.setTypeface(typeface);
         txt2.setTypeface(typeface);
-        txt3.setTypeface(typeface);*/
+        txt3.setTypeface(typeface);
     }
 }
