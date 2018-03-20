@@ -1,0 +1,202 @@
+{
+  "schedule": [
+    {
+      "event": "YADUMAGI NINDREN(SOLO MIME)",
+      "venue": "JVC 105",
+      "from_time": "8:30",
+      "to_time": "12:00"
+    },
+    {
+      "event": "EZHOTHOVIYAM(Finals)",
+      "venue": "JVC106",
+      "from_time": "10:00",
+      "to_time": "1:00"
+    },
+    {
+      "event": "METTUPODU(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "9:00",
+      "to_time": "10:00"
+    },
+    {
+      "event": "CINEMAPATTI(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "10:00",
+      "to_time": "11:00"
+    },
+    {
+      "event": "ALL IN ALL AZHAGURAJA(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "11:00",
+      "to_time": "12:00"
+    },
+    {
+      "event": "NAIYAANDI NAYAGARGAL(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "12:00",
+      "to_time": "2:00"
+    },
+
+    {
+      "event": "YADUMAGI NINDREN",
+      "venue": "JVC AUDI",
+      "from_time": "2:00",
+      "to_time": "3:00"
+    },
+    {
+      "event": "MUGAMOZHI(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "3:00",
+      "to_time": "5:30"
+    },
+
+    //ENGLISH EVENTS
+    {
+      "event": "CROSSWORD(Finals)",
+      "venue": "VV AUDI",
+      "from_time": "8:30",
+      "to_time": "10:00"
+    },
+    {
+      "event": "GEN QUIZ(Prelims) ",
+      "venue": "VV AUDI",
+      "from_time": "10:00",
+      "to_time": "11:00"
+    },
+    {
+      "event": "EXTEMPORE(Finals)",
+      "venue": "VV AUDI",
+      "from_time": "11:00",
+      "to_time": "12:00"
+    },
+    {
+      "event": "GEN QUIZ(Finals)",
+      "venue": "VV AUDI",
+      "from_time": "12:00",
+      "to_time": "2:00"
+    },
+    {
+      "event": "DEBATE(Finals)",
+      "venue": "VV AUDI",
+      "from_time": "2:00",
+      "to_time": "3:30"
+    },
+    {
+      "event": "JAM(Finals)",
+      "venue": "VV AUDI",
+      "from_time": "3:30",
+      "to_time": "5:30"
+    },
+    {
+      "event": "JAM (Prelims AND Semifinals)",
+      "venue": "VV 204",
+      "from_time": "8:30",
+      "to_time": "2:00"
+    },
+
+    {
+      "event": "SCRABBLE(Finals)",
+      "venue": "VV 204",
+      "from_time": "2:00",
+      "to_time": "3:30"
+    },
+    {
+      "event": "DEBATE(Prelims For external participants)",
+      "venue": "VV 205",
+      "from_time": "8:30",
+      "to_time": "2:00"
+    },
+    //HINDI EVENTS
+    {
+      "event": "BARFI(Finals)",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "9:00",
+      "to_time": "12:00"
+    },
+
+    {
+      "event": "SA RE GA MA PA",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "12:00",
+      "to_time": "3:00"
+    },
+
+    {
+      "event": "AAMNE SAAMNE",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "3:00",
+      "to_time": "5:30"
+    },
+    //TELGU EVENTS
+    {
+      "event": "TREASURE HUNT",
+      "venue": "TIFAC AUDI",
+      "from_time": "9:30",
+      "to_time": "12:30"
+    },
+
+    {
+      "event": "EVADI GOLA VAADIDHI",
+      "venue": "NMV AUDI",
+      "from_time": "2:00",
+      "to_time": "5:30"
+    },
+    //STUDIO
+    {
+      "event": "CREA SHAKTHI(Pro Show)",
+      "venue": "VKJ AUDI",
+      "from_time": "1:30",
+      "to_time": "4:30"
+    },
+
+    {
+      "event": "ONE ACT PLAY",
+      "venue": "VKJ AUDI",
+      "from_time": "12:00",
+      "to_time": "5:00"
+    },
+    //ARTS
+    {
+      "event": "RELAY ART",
+      "venue": "CTV",
+      "from_time": "9:30",
+      "to_time": "12:00"
+    },
+
+    //DANCE
+    {
+      "event": "SOLO, DUAL & TRIO DANCE",
+      "venue": "NMV AUDI",
+      "from_time": "9:00",
+      "to_time": "2:00"
+    },
+
+    //MUSIC
+    {
+      "event": "KS IDOL",
+      "venue": "TIFAC AUDI",
+      "from_time": "2:00",
+      "to_time": "5:00"
+    },
+    //DPI EVENS
+    {
+      "event": "DESIGN WORKSHOP",
+      "venue": "CTV CLASSROOM",
+      "from_time": "10:00",
+      "to_time": "12:00"
+    },
+    {
+      "event": "CARNATIC SOLO",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "9:00",
+      "to_time": "12:00"
+    },
+    //PROMOTIONS
+    {
+      "event": "MR. & MS. KURUKSASTRA",
+      "venue": "CHANAKYA AUDI",
+      "from_time": "11:00",
+      "to_time": "2:00"
+    }
+  ]
+}
