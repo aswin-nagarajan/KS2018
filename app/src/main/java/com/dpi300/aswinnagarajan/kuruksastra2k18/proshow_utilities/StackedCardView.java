@@ -77,7 +77,7 @@ public class StackedCardView {
         //imageView.setBackgroundResource(R.drawable.ic_launcher_background);
         //write code to set title
         mSwipeView.setAlpha(1);
-        setmSwipeDirectionalViewBackground();
+        //setmSwipeDirectionalViewBackground();
 
     }
 
@@ -123,7 +123,7 @@ public class StackedCardView {
 
         mCallback.onSwipeUp();
 
-        setmSwipeDirectionalViewBackground();
+        //setmSwipeDirectionalViewBackground();
 
     }
 
@@ -138,7 +138,7 @@ public class StackedCardView {
     private void onSwipeInDirectional(SwipeDirection direction) {
         Log.d("DEBUG", "SwipeInDirectional " + direction.name());
             mCallback.onSwipeUp();
-            setmSwipeDirectionalViewBackground();
+            //setmSwipeDirectionalViewBackground();
     }
 
     @SwipingDirection
