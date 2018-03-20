@@ -1,5 +1,6 @@
 package com.dpi300.aswinnagarajan.kuruksastra2k18;
 
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
@@ -76,36 +77,50 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
 //        TapTargetView.showFor(this,
 //                TapTarget.forToolbarMenuItem(mToolbar,title,desc)
+        if (isFirstTime()) {
+            TapTargetView.showFor(this,
+                    TapTarget.forView(mToolbar, title, desc)
 
-                TapTargetView.showFor(this,
-                TapTarget.forView(mToolbar,title,desc)
-
-                        // All options below are optional
-                        .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
-                        .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
-                        .targetCircleColor(R.color.colorPrimary)   // Specify a color for the target circle
-                        .titleTextSize(30)                  // Specify the size (in sp) of the title text
-                        .titleTextColor(R.color.colorPrimary)      // Specify the color of the title text
-                        .descriptionTextSize(20)            // Specify the size (in sp) of the description text
-                        .descriptionTextColor(R.color.pink)  // Specify the color of the description text
-                        .textColor(R.color.green)            // Specify a color for both the title and description text
-                        .textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
-                        .dimColor(R.color.orange)            // If set, will dim behind the view with 30% opacity of the given color
-                        .drawShadow(true)                   // Whether to draw a drop shadow or not
-                        .cancelable(false)                  // Whether tapping outside the outer circle dismisses the view
-                        .tintTarget(true)                   // Whether to tint the target view's color
-                        .transparentTarget(false)           // Specify whether the target is transparent (displays the content underneath)
+                            // All options below are optional
+                            .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
+                            .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
+                            .targetCircleColor(R.color.colorPrimary)   // Specify a color for the target circle
+                            .titleTextSize(30)                  // Specify the size (in sp) of the title text
+                            .titleTextColor(R.color.colorPrimary)      // Specify the color of the title text
+                            .descriptionTextSize(20)            // Specify the size (in sp) of the description text
+                            .descriptionTextColor(R.color.pink)  // Specify the color of the description text
+                            .textColor(R.color.green)            // Specify a color for both the title and description text
+                            .textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
+                            .dimColor(R.color.orange)            // If set, will dim behind the view with 30% opacity of the given color
+                            .drawShadow(true)                   // Whether to draw a drop shadow or not
+                            .cancelable(false)                  // Whether tapping outside the outer circle dismisses the view
+                            .tintTarget(true)                   // Whether to tint the target view's color
+                            .transparentTarget(false)           // Specify whether the target is transparent (displays the content underneath)
 //                        .icon(Drawable)                     // Specify a custom drawable to draw as the target
-                        .targetRadius(100),                  // Specify the target radius (in dp)
-                new TapTargetView.Listener() {          // The listener can listen for regular clicks, long clicks or cancels
-                    @Override
-                    public void onTargetClick(TapTargetView view) {
-                        super.onTargetClick(view);
-                    }
-                });
+                            .targetRadius(100),                  // Specify the target radius (in dp)
+                    new TapTargetView.Listener() {          // The listener can listen for regular clicks, long clicks or cancels
+                        @Override
+                        public void onTargetClick(TapTargetView view) {
+                            super.onTargetClick(view);
+                        }
+                    });
+        }
 
 
 
+    }
+
+    private boolean isFirstTime()
+    {
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        boolean ranBefore = preferences.getBoolean("RanBefore", false);
+        if (!ranBefore) {
+            // first time
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putBoolean("RanBefore", true);
+            editor.commit();
+        }
+        return !ranBefore;
     }
 
 
@@ -143,7 +158,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
         MenuObject dpi = new MenuObject("300dpi");
         listClusters.add(new String("300dpi"));
-        //dpi.setResource(R.drawable.design_new);
+        dpi.setResource(R.drawable.design_new);
 
         MenuObject arts = new MenuObject("Arts");
         listClusters.add(new String("Arts"));
@@ -186,7 +201,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
         MenuObject sfh = new MenuObject("SASTRA Fotohub");
         listClusters.add(new String("SASTRA Fotohub"));
-        //stud.setResource(R.drawable.sfh);
+        sfh.setResource(R.drawable.sfh);
 
         menuObjects.add(close);
         menuObjects.add(dpi);
