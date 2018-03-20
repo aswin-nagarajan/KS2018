@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         friends.add(new HomeEvent(R.drawable.schedule, "SCHEDULE", R.color.purple, "Timings","Event venue","Day 1","Day 2", "Day 3"));
         friends.add(new HomeEvent(R.drawable.proshows, "PRO SHOWS", R.color.saffron, "Sid Sriram", "Evam Tamasha", "SMT", "Crea Shakti","Instrumental Night"));
         friends.add(new HomeEvent(R.drawable.aboutks, "ABOUT KURUKSASTRA", R.color.green, "History", "Showcases","About Ks Upahaar","About SASTRA","What's Special"));
-        friends.add(new HomeEvent(R.drawable.aboutus, "ABOUT US", R.color.pink, "Graphics Design","Frone end Web Developers","Back end developers","Android Developers","Animators"));
+        friends.add(new HomeEvent(R.drawable.aboutus, "ABOUT US", R.color.pink, "Graphics Design","Android Developers","Animators","Front end Web Developers","Back end developers"));
         friends.add(new HomeEvent(R.drawable.sponsors, "SPONSORS", R.color.orange, "Title Sponsor", "Associate Sponsors","Co Sponsors"));
         return friends;
     }
