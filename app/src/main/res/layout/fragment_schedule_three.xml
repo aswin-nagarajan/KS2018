@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/schedule_back">
+    android:background="@drawable/bg">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/schedule_list_three"
