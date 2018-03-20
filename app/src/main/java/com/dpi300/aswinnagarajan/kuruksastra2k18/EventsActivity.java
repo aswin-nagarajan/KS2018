@@ -72,7 +72,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         addFragment(new EventFragment(), true, R.id.container);
 
         CharSequence title= "Events and Clusters";
-        CharSequence desc = "Tap on this button to look at the different clusters participating in KS 2k18 \n Click on a specific clusters to look at the differents events conducted by that particular cluster ";
+        CharSequence desc = "Tap on the button at the top right corner to look at the different clusters participating in KS 2k18 \n Then Click on a specific clusters to look at the differents events conducted by that particular cluster ";
 
 //        TapTargetView.showFor(this,
 //                TapTarget.forToolbarMenuItem(mToolbar,title,desc)
@@ -143,7 +143,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
         MenuObject dpi = new MenuObject("300dpi");
         listClusters.add(new String("300dpi"));
-        dpi.setResource(R.drawable.design_logo);
+        dpi.setResource(R.drawable.design_new);
 
         MenuObject arts = new MenuObject("Arts");
         listClusters.add(new String("Arts"));
@@ -186,7 +186,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
         MenuObject sfh = new MenuObject("SASTRA Fotohub");
         listClusters.add(new String("SASTRA Fotohub"));
-        stud.setResource(R.drawable.studio);
+        stud.setResource(R.drawable.sfh);
 
         menuObjects.add(close);
         menuObjects.add(dpi);

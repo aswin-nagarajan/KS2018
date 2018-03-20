@@ -1036,7 +1036,7 @@ public class EventFragment extends Fragment {
      /*SFHList.put("Salle De Cinema",ev100d);
      SFHList.put("Online Photography Event",ev101d);*/
      sfh.add(new Event("Salle De Cinema",1));
-     sfh.add(new Event("Online Photography Event",1));
+     sfh.add(new Event("Online Photography\nEvent",1));
 
         //300dpi
         design.add(new Event("Photo Synthesis",1));
@@ -1059,7 +1059,7 @@ public class EventFragment extends Fragment {
 
         elits.add(new Event("Ganimetoonic Quiz",2));
         elits.add(new Event("India Quiz",3));
-        elits.add(new Event("What's The Good Word",2));
+        elits.add(new Event("What's The\nGood Word",2));
         elits.add(new Event("Crossword",2));
         elits.add(new Event("Scrabble",2));
         elits.add(new Event("Dumb Charades",3));
@@ -1086,10 +1086,10 @@ public class EventFragment extends Fragment {
         hlits.add(new Event("Antakshari",2));
         hlits.add(new Event("Dramebaaz",9));
         hlits.add(new Event("Dumc - Barfi",3));
-        hlits.add(new Event("Debate - Amne Samne",3));
+        hlits.add(new Event("Debate\nAmne Samne",3));
         hlits.add(new Event("India Quiz",2));
-        hlits.add(new Event("Monoacting - Nautanki Saala",1));
-        hlits.add(new Event("Extempore - Bas Ek Pal",1));
+        hlits.add(new Event("Monoacting\nNautanki Saala",1));
+        hlits.add(new Event("Extempore\nBas Ek Pal",1));
         hlits.add(new Event("Fun Events",2));
 
         //Tamil Lits
@@ -1134,7 +1134,7 @@ public class EventFragment extends Fragment {
 
         //Arts
         arts.add(new Event("Shadow Art",3));
-        arts.add(new Event("Face tatoo Making",2));
+        arts.add(new Event("Face tatoo\n Making",2));
         arts.add(new Event("Relay Art",2));
         arts.add(new Event("Hall of Fame",1));
 
@@ -1170,8 +1170,8 @@ public class EventFragment extends Fragment {
 
         smt.add(new Event("Eastern Band Event",2));
         smt.add(new Event("KS Idol",1));
-        smt.add(new Event("Carnatic Solo vocal",1));
-        smt.add(new Event("Western Solo Vocal",1));
+        smt.add(new Event("Carnatic Solo\n vocal",1));
+        smt.add(new Event("Western Solo\n Vocal",1));
         smt.add(new Event("Instrumental: Eastern",1));
      smt.add(new Event("Instrumental: Western",1));
 
@@ -1200,6 +1200,7 @@ public class EventFragment extends Fragment {
         map.put("Eastern Dance Team",east);
         map.put("Western Dance Team",west);
         map.put("SASTRA Music Team",smt);
+       map.put("SASTRA Fotohub",sfh);
 
         return map;
     }

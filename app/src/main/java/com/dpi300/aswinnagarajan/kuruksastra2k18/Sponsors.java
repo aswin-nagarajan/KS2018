@@ -13,7 +13,8 @@ public class Sponsors extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sponsors);
+//        setContentView(R.layout.activity_sponsors);
+        setContentView(R.layout.activity_main2);
 
         typeface = Typeface.createFromAsset(getAssets(),"font/PT_Sans-Narrow-Web-Regular.ttf");
         /*txt1 = findViewById(R.id.prsnt);
