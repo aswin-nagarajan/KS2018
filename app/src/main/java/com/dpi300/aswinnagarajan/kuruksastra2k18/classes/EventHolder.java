@@ -41,5 +41,7 @@ public class EventHolder extends RecyclerView.ViewHolder implements View.OnClick
         intent.putExtra("Rules",EventFragment.getEventDescription(cluster,(String)title.getText()).get("rules"));
         intent.putExtra("Contact",EventFragment.getEventDescription(cluster,(String)title.getText()).get("contact"));
         ctx.startActivity(intent);
+
+
     }
 }

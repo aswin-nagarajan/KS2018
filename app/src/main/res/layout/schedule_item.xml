@@ -2,7 +2,6 @@
 
     <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -39,6 +38,7 @@
             android:textColor="@android:color/white"
             android:text="From 1:00 to 2:00"
             android:textSize="20sp"
+            android:layout_marginBottom="10dp"
             android:visibility="gone"/>
 
     </RelativeLayout>

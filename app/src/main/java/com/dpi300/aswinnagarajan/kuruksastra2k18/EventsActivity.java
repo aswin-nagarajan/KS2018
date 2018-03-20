@@ -248,7 +248,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             if (addToBackStack)
                 transaction.addToBackStack(backStackName);
-            transaction.commit();
+                transaction.commit();
         }
     }
 
@@ -265,6 +265,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
             case R.id.context_menu:
                 if (fragmentManager.findFragmentByTag(ContextMenuDialogFragment.TAG) == null) {
                     mMenuDialogFragment.show(fragmentManager, ContextMenuDialogFragment.TAG);
+
                 }
                 break;
         }
@@ -277,6 +278,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
             mMenuDialogFragment.dismiss();
         } else {
             finish();
+            overridePendingTransition(R.anim.slide_from_left , R.anim.slide_to_right);
         }
     }
 
