@@ -1059,7 +1059,7 @@ public class EventFragment extends Fragment {
 
         elits.add(new Event("Ganimetoonic Quiz",2));
         elits.add(new Event("India Quiz",3));
-        elits.add(new Event("What's The\nGood Word",2));
+        elits.add(new Event("What's The Good Word",2));
         elits.add(new Event("Crossword",2));
         elits.add(new Event("Scrabble",2));
         elits.add(new Event("Dumb Charades",3));
@@ -1086,10 +1086,10 @@ public class EventFragment extends Fragment {
         hlits.add(new Event("Antakshari",2));
         hlits.add(new Event("Dramebaaz",9));
         hlits.add(new Event("Dumc - Barfi",3));
-        hlits.add(new Event("Debate\nAmne Samne",3));
+        hlits.add(new Event("Debate - Amne Samne",3));
         hlits.add(new Event("India Quiz",2));
-        hlits.add(new Event("Monoacting\nNautanki Saala",1));
-        hlits.add(new Event("Extempore\nBas Ek Pal",1));
+        hlits.add(new Event("Monoacting - Nautanki Saala",1));
+        hlits.add(new Event("Extempore - Bas Ek Pal",1));
         hlits.add(new Event("Fun Events",2));
 
         //Tamil Lits
@@ -1109,7 +1109,7 @@ public class EventFragment extends Fragment {
         TamList.put("RAJAPAT",ev61d);
         TamList.put("STREETPLAY",ev59d);*/
         tamlits.add(new Event("DEBATE",1));
-        tamlits.add(new Event("TAMIL QUIZ\"",1));
+        tamlits.add(new Event("TAMIL QUIZ",1));
      tamlits.add(new Event("CREATIVE WRITING",1));
      tamlits.add(new Event("POEM WRITING",1));
      tamlits.add(new Event("CINEQUIZ",1));
@@ -1134,7 +1134,7 @@ public class EventFragment extends Fragment {
 
         //Arts
         arts.add(new Event("Shadow Art",3));
-        arts.add(new Event("Face tatoo\n Making",2));
+        arts.add(new Event("Face tatoo Making",2));
         arts.add(new Event("Relay Art",2));
         arts.add(new Event("Hall of Fame",1));
 
@@ -1170,8 +1170,8 @@ public class EventFragment extends Fragment {
 
         smt.add(new Event("Eastern Band Event",2));
         smt.add(new Event("KS Idol",1));
-        smt.add(new Event("Carnatic Solo\n vocal",1));
-        smt.add(new Event("Western Solo\n Vocal",1));
+        smt.add(new Event("Carnatic Solo vocal",1));
+        smt.add(new Event("Western Solo Vocal",1));
         smt.add(new Event("Instrumental: Eastern",1));
      smt.add(new Event("Instrumental: Western",1));
 
@@ -1182,7 +1182,7 @@ public class EventFragment extends Fragment {
         TelList.put("Evadi Gola Vadidhi",ev40d);
         TelList.put("Mr Medhavi",ev41d);
         TelList.put("Treasure hunt",ev42d);*/
-        tellits.add(new Event("Pataku Pranam \nPallavi Aithe",3));
+        tellits.add(new Event("Pataku Pranam Pallavi Aithe",3));
         tellits.add(new Event("Rangasthalamr",10));
      tellits.add(new Event("Oke okka Chance",3));
      tellits.add(new Event("Evadi Gola Vadidhi",3));
