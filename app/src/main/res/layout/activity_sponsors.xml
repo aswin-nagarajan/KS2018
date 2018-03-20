@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <us.egek.discrollview2.DiscrollView xmlns:discrollve="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -12,22 +11,20 @@
         android:layout_height="match_parent">
 
         <FrameLayout
+            android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="99dp"
-        android:layout_margin="4dp"
+        android:layout_height="650dp"
         android:background="@color/sponsors_c1"
-        android:padding="1dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="99dp"
-            android:background="@drawable/ks_logo" />
-    </FrameLayout>
+        android:paddingTop="210dp"
+        android:layout_gravity="center_vertical">
 
-        <!--<FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            >-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:background="@drawable/ks_logo"
+                android:padding="10dp" />
+        </FrameLayout>
+
 
             <TextView
                 android:id="@+id/prsnt"

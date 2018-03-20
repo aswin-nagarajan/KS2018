@@ -80,7 +80,7 @@
 
         <activity android:name=".EventDescriptionActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
