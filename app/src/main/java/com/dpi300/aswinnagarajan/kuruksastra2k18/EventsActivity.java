@@ -35,6 +35,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
     private ContextMenuDialogFragment mMenuDialogFragment;
     private Toolbar mToolbar;
     private TextView mToolBarTextView;
+    private List<String> listClusters = new ArrayList<>();
 
 
     @Override
@@ -42,6 +43,9 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 
     }
 
+    public List<String> getClusters(){
+        return listClusters;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,7 +78,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
 //                TapTarget.forToolbarMenuItem(mToolbar,title,desc)
 
                 TapTargetView.showFor(this,
-                TapTarget.forToolbarNavigationIcon(mToolbar,title,desc)
+                TapTarget.forView(mToolbar,title,desc)
 
                         // All options below are optional
                         .outerCircleColor(R.color.saffron)      // Specify a color for the outer circle
@@ -138,36 +142,50 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         close.setResource(R.drawable.icn_close);
 
         MenuObject dpi = new MenuObject("300dpi");
+        listClusters.add(new String("300dpi"));
         dpi.setResource(R.drawable.design_logo);
 
         MenuObject arts = new MenuObject("Arts");
+        listClusters.add(new String("Arts"));
         Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.arts);
         arts.setBitmap(b);
 
         MenuObject east = new MenuObject("Eastern Dance Team");
+        listClusters.add(new String("Eastern Dance Team"));
         BitmapDrawable bd = new BitmapDrawable(getResources(),
                 BitmapFactory.decodeResource(getResources(), R.drawable.eastern));
         east.setDrawable(bd);
 
         MenuObject west = new MenuObject("Western Dance Team");
+        listClusters.add(new String("Western Dance Team"));
         west.setResource(R.drawable.dance);
 
         MenuObject eng = new MenuObject("English Literary Society");
+        listClusters.add(new String("English Literary Society"));
         eng.setResource(R.drawable.english);
 
         MenuObject tamil = new MenuObject("Tamizh Sangam");
+        listClusters.add(new String("Tamizh Sangam"));
         tamil.setResource(R.drawable.tamil);
 
         MenuObject tel = new MenuObject("Telugu Lits");
+        listClusters.add(new String("Telugu Lits"));
         tel.setResource(R.drawable.telugu);
 
         MenuObject hind = new MenuObject("Hindi Lits");
-        hind.setResource(R.drawable.english);
+        listClusters.add(new String("Hindi Lits"));
+        hind.setResource(R.drawable.hindi);
 
         MenuObject music = new MenuObject("SASTRA Music Team");
+        listClusters.add(new String("SASTRA Music Team"));
         music.setResource(R.drawable.smt);
 
         MenuObject stud = new MenuObject("The Studio");
+        listClusters.add(new String("The Studio"));
+        stud.setResource(R.drawable.studio);
+
+        MenuObject sfh = new MenuObject("SASTRA Fotohub");
+        listClusters.add(new String("SASTRA Fotohub"));
         stud.setResource(R.drawable.studio);
 
         menuObjects.add(close);
@@ -181,6 +199,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
         menuObjects.add(hind);
         menuObjects.add(music);
         menuObjects.add(stud);
+        menuObjects.add(sfh);
         return menuObjects;
     }
 
@@ -201,6 +220,7 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
             }
         });
         mToolBarTextView.setText("EVENTS");
+
     }
 
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
@@ -248,6 +268,10 @@ public class EventsActivity extends AppCompatActivity implements EventFragment.O
     @Override
     public void onMenuItemClick(View clickedView, int position) {
 //        Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
+        if(position>=1) {
+            EventFragment.change(listClusters.get(position - 1));
+        }
+
 
     }
 

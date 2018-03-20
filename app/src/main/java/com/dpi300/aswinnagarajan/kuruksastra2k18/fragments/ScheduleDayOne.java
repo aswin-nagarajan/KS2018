@@ -13,6 +13,12 @@ import android.view.ViewGroup;
 import com.dpi300.aswinnagarajan.kuruksastra2k18.R;
 import com.dpi300.aswinnagarajan.kuruksastra2k18.ScheduleRecyclerView.MyRecyclerView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * Created by Sibi on 15-03-2018.
  */
@@ -33,14 +39,33 @@ public class ScheduleDayOne extends Fragment {
 
         v = inflater.inflate(R.layout.fragment_schedule_one,container,false);
 
-        res = v.getResources();// to get array from string.xml
-        recyclerView = (RecyclerView) v.findViewById(R.id.schedule_list_one);
-        adapter = new MyRecyclerView(res.getStringArray(R.array.schedule_array));
-        linear = new LinearLayoutManager(getActivity().getBaseContext());
 
+
+        res = v.getResources();// to get array from string.xml
+
+        recyclerView = (RecyclerView) v.findViewById(R.id.schedule_list_one);
+        adapter = new MyRecyclerView(loadJSONFromAsset());
+        linear = new LinearLayoutManager(getActivity().getBaseContext());
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(linear);
+
         return v;
+    }
+
+    private String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getActivity().getAssets().open("day_1.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 }

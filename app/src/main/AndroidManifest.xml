@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
+
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,30 +24,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EventsActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.EventsActivity"
             android:label="@string/title_activity_events"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ScheduleActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ScheduleActivity"
             android:label="@string/title_activity_schedule"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.dpi300.aswinnagarajan.kuruksastra2k18.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ProShowActivity"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ProShowActivity"
             android:label="@string/title_activity_pro_show"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ParticipantLogin"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.ParticipantLogin"
             android:label="@string/title_activity_participant_login"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name=".LogIn"
+            android:name="com.dpi300.aswinnagarajan.kuruksastra2k18.LogIn"
             android:label="@string/title_activity_log_in"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".AboutKS.AboutKSActivity"
             android:label="AboutKSActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutActivity" />
+        <activity
+            android:name=".AboutKS.DetailActivity"
+            android:parentActivityName=".AboutKS.AboutKSActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AboutActivity" />
         <activity
             android:name=".AboutKS.DetailActivity"
@@ -55,11 +64,31 @@
         <activity
             android:name=".AboutUs_Activity"
             android:label="@string/title_activity_about_us_"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sponsors"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutUs_main_Activity"
             android:label="@string/title_activity_about_us_main_"
             android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".EventDescriptionActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

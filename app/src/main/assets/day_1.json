@@ -1,0 +1,208 @@
+{
+  "schedule": [
+
+    {
+      "event": "TAMIZHATTAM(Prelims)",
+      "venue": "JVC 105",
+      "from_time": "8:30",
+      "to_time": "11:00"
+    },
+    {
+      "event": "MOUNAMOZHI(Prelims)",
+      "venue": "JVC 106",
+      "from_time": "9:00",
+      "to_time": "12:00"
+    },
+    {
+      "event": "SORPOR(Prelims)",
+      "venue": "JVC 107",
+      "from_time": "9:00",
+      "to_time": "11:30"
+    },
+    {
+      "event": "METTUPODU(Prelims)",
+      "venue": "JVC 114",
+      "from_time": "11:00",
+      "to_time": "1:00"
+    },
+    {
+      "event": "RAJAPPAT-MONOACT(Prelims)",
+      "venue": "JVC 116",
+      "from_time": "9:00",
+      "to_time": "12:00"
+    },
+    {
+      "event": "TAMIZHATTAM(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "12:30",
+      "to_time": "2:00"
+    },
+    {
+      "event": "MOUNAMOZHI(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "2:00",
+      "to_time": "3:30"
+    },
+    {
+      "event": "SORPOR(Finals)",
+      "venue": "JVC AUDI",
+      "from_time": "3:30",
+      "to_time": "5:00"
+    },
+    {
+      "event": "RAJAPPAT-MONOACT(Finals)",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "3:00",
+      "to_time": "5:00"
+    },
+    {
+      "event": "RAJAPPAT-MONOACT(Finals)",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "3:00",
+      "to_time": "5:00"
+    },
+
+
+    {
+      "event": "CROSSWORD(Prelims)",
+      "venue": "VV AUDI",
+      "from_time": "8:30",
+      "to_time": "9:30"
+    },
+    {
+      "event": "EXTEMPORE(Prelims)",
+      "venue": "VV AUDI",
+      "from_time": "9:30",
+      "to_time": "11:00"
+    },
+    {
+      "event": "GANIME QUIZ(One Shot)",
+      "venue": "VV AUDI",
+      "from_time": "11:00",
+      "to_time": "12:30"
+    },
+    {
+      "event": "SCRABBLE(Prelims)",
+      "venue": "VV AUDI",
+      "from_time": "12:30",
+      "to_time": "1:30"
+    },
+    {
+      "event": "POTPOURRI(Prelims)(WRITTEN)",
+      "venue": "VV AUDI",
+      "from_time": "1:30",
+      "to_time": "2:30"
+    },
+    {
+      "event": "WHAT'S THE GOOD WORD(Prelims)",
+      "venue": "VV AUDI",
+      "from_time": "2:30",
+      "to_time": "3:30"
+    },
+    {
+      "event": "DUMB CHARADES(Prelims)",
+      "venue": "VV 204",
+      "from_time": "8:30",
+      "to_time": "2:30"
+    },
+    {
+      "event": "DUMB CHARADES(Finals)",
+      "venue": "VV AUDI",
+      "from_time": "3:30",
+      "to_time": "5:30"
+    },
+    {
+      "event": "POTPOURRI(Prelims)(CHEMISTRY)",
+      "venue": "VV 205",
+      "from_time": "11:00",
+      "to_time": "2:30"
+    },
+
+    {
+      "event": "BAS EK PAL",
+      "venue": "NMV AUDI",
+      "from_time": "9:00",
+      "to_time": "11:00"
+    },
+
+    {
+      "event": "BARFI(Prelims)",
+      "venue": "NMV AUDI",
+      "from_time": "11:00",
+      "to_time": "2:00"
+    },
+
+
+    {
+      "event": "PATAKU PRAANAM PALLAVI AITHE",
+      "venue": "VKJ AUDI",
+      "from_time": "9:00",
+      "to_time": "12:30"
+    },
+    {
+      "event": "OKKE OKKA CHANCE",
+      "venue": "NMV AUDI",
+      "from_time": "2:30",
+      "to_time": "5:30"
+    },
+    {
+      "event": "PATAKU PRAANAM PALLAVI AITHE",
+      "venue": "VKJ AUDI",
+      "from_time": "9:00",
+      "to_time": "12:30"
+    },
+
+
+    {
+      "event": "MONOACTING",
+      "venue": "TIFAC AUDI",
+      "from_time": "10:00",
+      "to_time": "12:30"
+    },
+    {
+      "event": "IMPROV EVENT",
+      "venue": "TIFAC AUDI",
+      "from_time": "1:30",
+      "to_time": "5:30"
+    },
+
+    {
+      "event": "PAINTING",
+      "venue": "CTV",
+      "from_time": "9:00",
+      "to_time": "11:00"
+    },
+    {
+      "event": "SHADOW ART",
+      "venue": "CTV",
+      "from_time": "1:00",
+      "to_time": "2:30"
+    },
+
+    {
+      "event": "WESTERN GROUP DANCE(Prelims)",
+      "venue": "VKJ ENTRANCE",
+      "from_time": "9:00",
+      "to_time": "2:00"
+    },
+    {
+      "event": "WESTERN GROUP DANCE(Prelims)",
+      "venue": "VKJ ENTRANCE",
+      "from_time": "9:00",
+      "to_time": "2:00"
+    },
+
+    {
+      "event": "CARNATIC SOLO",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "9:00",
+      "to_time": "12:00"
+    },
+    {
+      "event": "INSTRUMENTAL SOLO",
+      "venue": "GNV SEMINAR HALL",
+      "from_time": "12:00",
+      "to_time": "3:00"
+    }
+  ]
+}

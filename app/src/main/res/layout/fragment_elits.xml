@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context="com.dpi300.aswinnagarajan.kuruksastra2k18.fragments.EventFragment">
 
     <TextView
@@ -11,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textSize="40dp"
-        android:text="Events"
+        android:text="300dpi"
+        android:id="@+id/title_clust"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"/>
     <!-- TODO: Update blank fragment layout -->

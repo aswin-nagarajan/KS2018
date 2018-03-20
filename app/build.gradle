@@ -44,5 +44,9 @@ dependencies {
 
     //AboutUs
     compile 'de.hdodenhof:circleimageview:2.2.0'
+    //Splash Screen
+    compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
 
+    //Sponsors ScrollView
+    compile 'com.github.egek92:discrollview2:v1.0'
 }

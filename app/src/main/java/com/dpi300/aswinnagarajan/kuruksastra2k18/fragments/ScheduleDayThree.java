@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 import com.dpi300.aswinnagarajan.kuruksastra2k18.R;
 import com.dpi300.aswinnagarajan.kuruksastra2k18.ScheduleRecyclerView.MyRecyclerView;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * Created by Sibi on 15-03-2018.
  */
@@ -34,11 +37,27 @@ public class ScheduleDayThree extends Fragment {
         res = v.getResources();
         recyclerView = (RecyclerView) v.findViewById(R.id.schedule_list_three);
         linear = new LinearLayoutManager(getActivity().getBaseContext());
-        adapter = new MyRecyclerView(res.getStringArray(R.array.schedule_array));
+        adapter = new MyRecyclerView(loadJSONFromAsset());
 
         recyclerView.setLayoutManager(linear);
         recyclerView.setAdapter(adapter);
         return v;
+    }
+
+    private String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getActivity().getAssets().open("day_3.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 }
 
