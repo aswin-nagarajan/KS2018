@@ -58,10 +58,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AboutActivity" />
         <activity
-            android:name=".AboutKS.DetailActivity"
-            android:parentActivityName=".AboutKS.AboutKSActivity"
-            android:theme="@style/AboutActivity" />
-        <activity
             android:name=".AboutUs_Activity"
             android:label="@string/title_activity_about_us_"
             android:theme="@style/AppTheme.NoActionBar"
@@ -88,7 +84,7 @@
 
         <activity android:name=".EventDescriptionActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
