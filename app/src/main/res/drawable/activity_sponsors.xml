@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<us.egek.discrollview2.DiscrollView xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <us.egek.discrollview2.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_margin="4dp"
+        android:background="@color/sponsors_c1"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:background="@drawable/ks_logo" />
+    </FrameLayout>
+
+        <!--<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            >-->
+
+            <TextView
+                android:id="@+id/prsnt"
+                android:text="Presented By"
+                android:textAllCaps="true"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+                discrollve:discrollve_toBgColor="@color/sponsors_c2"
+                discrollve:discrollve_translation="fromLeft"/>
+        <!--</FrameLayout>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_cub"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_margin="4dp"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <TextView
+                android:id="@+id/ast"
+                android:text="in association with"
+                android:textAllCaps="true"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_sbi"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_uti"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:src="@drawable/logo_reliance"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <TextView
+                android:text="powered by"
+                android:textAllCaps="true"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_vodafone"
+                android:layout_width="match_parent"
+                android:layout_height="102dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <TextView
+                android:id="@+id/ots"
+                android:text="other sponsors"
+                android:textAllCaps="true"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_coke"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_nippon"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_sundaram"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_bse"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_magoosh"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_superstar"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_max"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_redbull"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_radio"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_uiic"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_wegus"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_redfox"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_sangam"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_dt"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_saavn"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_panda"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_dm"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+
+            <ImageView
+                android:src="@drawable/logo_tfi"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_shik"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_faadoo"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_ig"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_festpav"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+
+            <ImageView
+                android:src="@drawable/logo_tcf"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+
+            <ImageView
+                android:src="@drawable/logo_avani"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+    </us.egek.discrollview2.DiscrollViewContent>
+</us.egek.discrollview2.DiscrollView>
