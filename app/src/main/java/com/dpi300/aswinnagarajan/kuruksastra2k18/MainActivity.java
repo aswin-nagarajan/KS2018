@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (adap.getItem(position).getNickname().equals("EVENTS")) {
 
-                        Intent intent = new Intent(getBaseContext(), EventsActivity.class);
+                        Intent intent = new Intent(MainActivity.this, EventsActivity.class);
                         startActivity(intent);
                         //getBaseContext().startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("SCHEDULE")) {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     } else if (adap.getItem(position).getNickname().equals("PRO SHOWS")) {
 
-                        Intent intent = new Intent(getBaseContext(), ProShowActivity.class);
+                        Intent intent = new Intent(MainActivity.this, ProShowActivity.class);
                         startActivity(intent);
                         //getBaseContext().startActivity(intent);
                     } else if(adap.getItem(position).getNickname().equals("ABOUT KURUKSASTRA")){
@@ -108,11 +108,11 @@ public class MainActivity extends AppCompatActivity {
     public List<HomeEvent> getHomeEvents(){
         List<HomeEvent> friends = new ArrayList<HomeEvent>();
             friends.add(new HomeEvent(R.drawable.events, "EVENTS", R.color.sienna, "Dance", "Literature", "Music", "Arts", "Design"));
-        friends.add(new HomeEvent(R.drawable.schedule, "SCHEDULE", R.color.purple, "Day 0", "Day 1", "Day 2", "Day 3"));
-        friends.add(new HomeEvent(R.drawable.proshows, "PRO SHOWS", R.color.saffron, "Sid Sriram", "Evam Tamasha", "SMT", "Crea Shakti"));
-        friends.add(new HomeEvent(R.drawable.aboutks, "ABOUT KURUKSASTRA", R.color.green, "History", "Showcases"));
-        friends.add(new HomeEvent(R.drawable.aboutus, "ABOUT US", R.color.pink, "Design", "Android App Development", "Graphic Design"));
-        friends.add(new HomeEvent(R.drawable.sponsors, "SPONSORS", R.color.orange, "Title Sponsor", "Associate Sponsor"));
+        friends.add(new HomeEvent(R.drawable.schedule, "SCHEDULE", R.color.purple, "Timings","Event venue","Day 1","Day 2", "Day 3"));
+        friends.add(new HomeEvent(R.drawable.proshows, "PRO SHOWS", R.color.saffron, "Sid Sriram", "Evam Tamasha", "SMT", "Crea Shakti","Instrumental Night"));
+        friends.add(new HomeEvent(R.drawable.aboutks, "ABOUT KURUKSASTRA", R.color.green, "History", "Showcases","About Ks Upahaar","About SASTRA","What's Special"));
+        friends.add(new HomeEvent(R.drawable.aboutus, "ABOUT US", R.color.pink, "Graphics Design","Frone end Web Developers","Back end developers","Android Developers","Animators"));
+        friends.add(new HomeEvent(R.drawable.sponsors, "SPONSORS", R.color.orange, "Title Sponsor", "Associate Sponsors","Co Sponsors"));
         return friends;
     }
 }
