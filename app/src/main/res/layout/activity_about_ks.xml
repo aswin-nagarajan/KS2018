@@ -76,7 +76,7 @@
         android:id="@+id/textUPHAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About UPHAR"
+        android:text="About KS UPAHAAR"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:transitionName="text"
