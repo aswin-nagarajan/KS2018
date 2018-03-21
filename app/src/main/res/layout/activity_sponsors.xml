@@ -56,6 +56,35 @@
 
         <FrameLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c1"
+            discrollve:discrollve_toBgColor="@color/sponsors_c2"
+            discrollve:discrollve_translation="fromLeft">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="media partner"
+                android:textAllCaps="true"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:layout_margin="8dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            discrollve:discrollve_fromBgColor="@color/sponsors_c2"
+            discrollve:discrollve_toBgColor="@color/sponsors_c1"
+            discrollve:discrollve_translation="fromRight">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_toi"
+                android:layout_margin="8dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_margin="4dp"
             discrollve:discrollve_fromBgColor="@color/sponsors_c1"
