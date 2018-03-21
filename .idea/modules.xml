@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KS2018.iml" filepath="$PROJECT_DIR$/KS2018.iml" />
       <module fileurl="file://C:\KS2k18\KS2018.iml" filepath="C:\KS2k18\KS2018.iml" />
-      <module fileurl="file://$PROJECT_DIR$/KS2k18.iml" filepath="$PROJECT_DIR$/KS2k18.iml" />
       <module fileurl="file://D:\Raju\KS_18App\KS\ks\KS2018\KS2k18.iml" filepath="D:\Raju\KS_18App\KS\ks\KS2018\KS2k18.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
