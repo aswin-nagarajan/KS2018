@@ -68,16 +68,16 @@ public class StackedCardView {
     @Resolve
     private void onResolved(){
 
-        Glide.with(mContext).load(mShow.getUrl())
+        /*Glide.with(mContext).load(mShow.getUrl())
                 .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
                         RoundedCornersTransformation.CornerType.ALL))
-                .into(imageView);
+                .into(imageView);*/
 
         //Toast.makeText(mContext, mShow.getUrl(), Toast.LENGTH_SHORT).show();
         //imageView.setBackgroundResource(R.drawable.ic_launcher_background);
         //write code to set title
         mSwipeView.setAlpha(1);
-        //setmSwipeDirectionalViewBackground();
+        setmSwipeDirectionalViewBackground();
 
     }
 
@@ -123,7 +123,7 @@ public class StackedCardView {
 
         mCallback.onSwipeUp();
 
-        //setmSwipeDirectionalViewBackground();
+        setmSwipeDirectionalViewBackground();
 
     }
 
@@ -138,7 +138,7 @@ public class StackedCardView {
     private void onSwipeInDirectional(SwipeDirection direction) {
         Log.d("DEBUG", "SwipeInDirectional " + direction.name());
             mCallback.onSwipeUp();
-            //setmSwipeDirectionalViewBackground();
+            setmSwipeDirectionalViewBackground();
     }
 
     @SwipingDirection
