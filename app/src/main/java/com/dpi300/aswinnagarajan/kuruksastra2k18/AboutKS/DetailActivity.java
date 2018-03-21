@@ -29,17 +29,17 @@ public class DetailActivity extends AppCompatActivity {
         switch (getIntent().getIntExtra("OPTION",0)){
 
             case 1:
-                imageBack.setBackgroundResource(R.drawable.sastra_back);
+                imageBack.setBackgroundResource(R.drawable.bg);
                 txt.setText(Html.fromHtml(getString(R.string.about_sastra)));
                 txt.setMovementMethod(new ScrollingMovementMethod());
             break;
             case 2:
-                imageBack.setBackgroundResource(R.drawable.ks_back);
+                imageBack.setBackgroundResource(R.drawable.bg);
                 txt.setText(Html.fromHtml(getString(R.string.about_ks)));
                 txt.setMovementMethod(new ScrollingMovementMethod());
                 break;
             case 3:
-                imageBack.setBackgroundResource(R.drawable.uphar_back);
+                imageBack.setBackgroundResource(R.drawable.bg);
                 txt.setText(Html.fromHtml(getString(R.string.about_up)));
                 txt.setMovementMethod(new ScrollingMovementMethod());
                 break;
