@@ -10,8 +10,6 @@
     <string name="title">My Description</string>
     <string name="context_menu">Context menu</string>
 
-
-
     <string name="title_activity_participant_login">ParticipantLogin</string>
     <string name="title_activity_log_in">LogIn</string>
     <string-array name="schedule_array">

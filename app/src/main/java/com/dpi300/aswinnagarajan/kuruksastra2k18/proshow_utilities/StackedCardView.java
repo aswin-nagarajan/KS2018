@@ -68,6 +68,7 @@ public class StackedCardView {
     @Resolve
     private void onResolved(){
 
+
         /*Glide.with(mContext).load(mShow.getUrl())
                 .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
                         RoundedCornersTransformation.CornerType.ALL))
@@ -76,9 +77,11 @@ public class StackedCardView {
         //Toast.makeText(mContext, mShow.getUrl(), Toast.LENGTH_SHORT).show();
         //imageView.setBackgroundResource(R.drawable.ic_launcher_background);
         //write code to set title
-        mSwipeView.setAlpha(1);
+
         setmSwipeDirectionalViewBackground();
 
+
+        mSwipeView.setAlpha(1);
     }
 
     @Click(R.id.imageView_proshow)
@@ -171,30 +174,62 @@ public class StackedCardView {
 
 
     private void setmSwipeDirectionalViewBackground(){
+
         if(mShow.getTitle().equalsIgnoreCase("Shravan Sridhar")){
+
             //mSwipeDirectionalView.setBackgroundResource(R.drawable.shravan_sridhar);
             imageView.setBackgroundResource(R.drawable.shravan_sridhar);
+            /*Glide.with(mContext).load(mShow.getUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
+                            RoundedCornersTransformation.CornerType.ALL))
+                    .error(R.drawable.shravan_sridhar)
+                    .into(imageView);*/
         }
         else if(mShow.getTitle().equalsIgnoreCase("Karthik")){
-//            mSwipeDirectionalView.setBackgroundResource(R.drawable.karthik);
-            imageView.setBackgroundResource(R.drawable.karthik);
+                //mSwipeDirectionalView.setBackgroundResource(R.drawable.karthik);
+                imageView.setBackgroundResource(R.drawable.karthik);
+            /*Glide.with(mContext).load(mShow.getUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
+                            RoundedCornersTransformation.CornerType.ALL))
+                    .error(R.drawable.karthik)
+                    .into(imageView);*/
         }
         else if(mShow.getTitle().equalsIgnoreCase("Aalap Raju")){
 //            mSwipeDirectionalView.setBackgroundResource(R.drawable.aalap_raju);
             imageView.setBackgroundResource(R.drawable.aalap_raju);
+           /* Glide.with(mContext).load(mShow.getUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
+                            RoundedCornersTransformation.CornerType.ALL))
+                    .error(R.drawable.aalap_raju)
+                    .into(imageView);*/
         } else if(mShow.getTitle().equalsIgnoreCase("Vijayagopal")){
 
 //            mSwipeDirectionalView.setBackgroundResource(R.drawable.vijay);
-            imageView.setBackgroundResource(R.drawable.vijay);
+                imageView.setBackgroundResource(R.drawable.vijay);
+           /* Glide.with(mContext).load(mShow.getUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
+                            RoundedCornersTransformation.CornerType.ALL))
+                    .error(R.drawable.vijay)
+                    .into(imageView);*/
         } else if(mShow.getTitle().equalsIgnoreCase("Crea Shakthi")){
 
             //mSwipeDirectionalView.setBackgroundResource(R.drawable.crea_shakthi);
             imageView.setBackgroundResource(R.drawable.crea_shakthi);
+            /*Glide.with(mContext).load(mShow.getUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
+                            RoundedCornersTransformation.CornerType.ALL))
+                    .error(R.drawable.crea_shakthi)
+                    .into(imageView);*/
         }
         else if(mShow.getTitle().equalsIgnoreCase("Sid Sriram")){
 
             //mSwipeDirectionalView.setBackgroundResource(R.drawable.sidsriram);
             imageView.setBackgroundResource(R.drawable.sidsriram);
+            /*Glide.with(mContext).load(mShow.getUrl())
+                    .bitmapTransform(new RoundedCornersTransformation(mContext, Utils_ProShow.dpTopx(7),0,
+                            RoundedCornersTransformation.CornerType.ALL))
+                    .error(R.drawable.sidsriram)
+                    .into(imageView);*/
         }
 
     }
